@@ -133,3 +133,33 @@ body {
     background-color: darkred;
   }
   
+  #news {
+    padding: 50px;
+    background-color: #eee;
+    text-align: center;
+  }
+  
+  .news-card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  .news-link {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+  }
+  .footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }

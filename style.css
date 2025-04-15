@@ -113,3 +113,23 @@ body {
     background-color: #555;
   }
   
+  .cta-container {
+    background: url('images/cta-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+  }
+  
+  .cta-btn:hover {
+    background-color: darkred;
+  }
+  

@@ -1,0 +1,20 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .pill-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .pill-nav a {
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 25px;
+  }
+  

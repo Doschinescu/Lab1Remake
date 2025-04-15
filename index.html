@@ -11,29 +11,42 @@
 </head>
 <body>
 
-<div class="pill-nav">
-  <a href="#models">Models</a>
-  <a href="#center">Find Your Center</a>
-  <a href="#contact">Contact Us</a>
-</div>
+  <div class="pill-nav">
+    <a href="#models">Models</a>
+    <a href="#center">Find Your Center</a>
+    <a href="#contact">Contact Us</a>
+  </div>
 
-</body>
+  <section id="models" class="models-section">
+    <h2>Our Models</h2>
+    <div class="models-container">
+      <div class="car-card">
+        <img src="images/mb1.jpg" alt="Mercedes Model" class="car-image">
+        <div class="car-info">
+          <h3>Mercedes Benz c63</h3>
+          <p>Luxury performance coupe</p>
+        </div>
+      </div>
 
-</html>
-<section id="models" class="models-section">
-  <h2>Our Models</h2>
-  <div class="models-container">
-    <div class="car-card">
-      <img src="images/mb1.jpg" alt="Mercedes Model" class="car-image">
-      <div class="car-info">
-        <h3>Mercedes Benz c63</h3>
-        <p>Luxury performance coupe</p>
+      <div class="car-card">
+        <img src="images/mb3.jpg" alt="Mercedes Model" class="car-image">
+        <div class="car-info">
+          <h3>Mercedes Benz E63</h3>
+          <p>Sport performance coupe</p>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="images/mb4.jpg" alt="Mercedes Model" class="car-image">
+        <div class="car-info">
+          <h3>Mercedes Benz G63</h3>
+          <p>Luxury SUV performance</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="center" class="Mercedes-center">
+  <section id="center" class="Mercedes-center">
     <div class="center-container">
       <div class="center-text">
         <h2>Find Your Mercedes Center</h2>
@@ -47,19 +60,22 @@
   
   <section id="contact" class="contact-section">
     <h2>Contact Us</h2>
-    <form class="contact-container">
-      <label for="name">Name:</label>
-      <input type="text" id="name" required>
+    <div class="contact-card">
+      <form class="contact-container">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
   
-      <label for="email">Email:</label>
-      <input type="email" id="email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
   
-      <label for="message">Message:</label>
-      <textarea id="message" required></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" required></textarea>
   
-      <button type="submit" class="submit-btn">Send</button>
-    </form>
+        <button type="submit" class="submit-btn">Send</button>
+      </form>
+    </div>
   </section>
+  
 
   <section class="cta-container">
     <h2>Ready to drive?</h2>
@@ -82,3 +98,6 @@
     </div>
     <p class="footer-text">© 2025 Porsche Landing Project</p>
   </footer>
+
+</body>
+</html>

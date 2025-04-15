@@ -86,32 +86,49 @@ body {
     text-align: center;
   }
   
-  .contact-container {
+  .contact-card {
     max-width: 600px;
-    margin: auto;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    text-align: left;
   }
   
-  input, textarea {
-    padding: 10px;
-    border-radius: 5px;
+  .contact-container label {
+    font-weight: bold;
+  }
+  
+  .contact-container input,
+  .contact-container textarea {
+    padding: 12px;
+    border-radius: 8px;
     border: 1px solid #ccc;
+    font-size: 1rem;
   }
   
   .submit-btn {
     background-color: #000;
     color: white;
-    padding: 10px;
+    padding: 12px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
   }
   
   .submit-btn:hover {
     background-color: #555;
   }
+  
   
   .cta-container {
     background: url('images/cta-bg.jpg') no-repeat center center/cover;

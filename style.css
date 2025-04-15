@@ -24,3 +24,37 @@ body {
     transition: 0.3s;
   }
   
+  .models-section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .models-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .car-card {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .car-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .car-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .car-info {
+    padding: 15px;
+  }
+  

@@ -226,3 +226,22 @@ body {
     50% { transform: translateY(-20px); }
   }
   
+  .mascot-widget {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    width: 160px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 10px;
+    z-index: 999;
+  }
+  
+  .mascot-img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  

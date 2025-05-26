@@ -3,18 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Mercedes Landing Page</title>
-
 
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <title>Mercedes Landing Page</title>
 
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800">
 
   <div class="pill-nav">
     <a href="#models">Models</a>
@@ -22,122 +18,112 @@
     <a href="#contact">Contact Us</a>
   </div>
 
-<section id="models" class="py-12 bg-gray-100">
-  <h2 class="text-3xl font-bold text-center mb-8">Our Models</h2>
-  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
-    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-      <img src="images/mb1.jpg" alt="Mercedes Model" class="w-full h-48 object-cover">
-      <div class="p-4">
-        <h3 class="text-xl font-semibold">Mercedes Benz c63</h3>
-        <p class="text-gray-600">Luxury performance coupe</p>
+  <!-- Models Section -->
+  <section id="models" class="py-16 px-4 md:px-10 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-10">Our Models</h2>
+    <div class="models-container grid gap-6 md:grid-cols-3">
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition duration-300">
+        <img src="images/mb1.jpg" alt="Mercedes Model" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Mercedes Benz c63</h3>
+          <p class="text-gray-600">Luxury performance coupe</p>
+        </div>
       </div>
-    </div>
-    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-      <img src="images/mb3.jpg" alt="Mercedes Model" class="w-full h-48 object-cover">
-      <div class="p-4">
-        <h3 class="text-xl font-semibold">Mercedes Benz E63</h3>
-        <p class="text-gray-600">Sport performance coupe</p>
-      </div>
-    </div>
-    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-      <img src="images/mb4.jpg" alt="Mercedes Model" class="w-full h-48 object-cover">
-      <div class="p-4">
-        <h3 class="text-xl font-semibold">Mercedes Benz G63</h3>
-        <p class="text-gray-600">Luxury SUV performance</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-  <section id="center" class="Mercedes-center">
-    <div class="center-container">
-      <div class="center-text">
-        <h2>Find Your Mercedes Center</h2>
-        <p>Locate your nearest Mercedes showroom</p>
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition duration-300">
+        <img src="images/mb3.jpg" alt="Mercedes Model" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Mercedes Benz E63</h3>
+          <p class="text-gray-600">Sport performance coupe</p>
+        </div>
       </div>
-      <div class="center-image">
-        <img src="images/center.jpg" alt="Mercedes Center">
+
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition duration-300">
+        <img src="images/mb4.jpg" alt="Mercedes Model" class="w-full h-60 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Mercedes Benz G63</h3>
+          <p class="text-gray-600">Luxury SUV performance</p>
+        </div>
       </div>
     </div>
   </section>
-  
- <section id="contact" class="bg-gray-100 py-16 px-4">
-  <h2 class="text-3xl font-bold text-center mb-10">Contact Us</h2>
-  <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg">
-    <form class="flex flex-col gap-4">
-      <label for="name" class="font-medium">Name:</label>
-      <input
-        type="text"
-        id="name"
-        required
-        class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-      />
 
-      <label for="email" class="font-medium">Email:</label>
-      <input
-        type="email"
-        id="email"
-        required
-        class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-      />
-
-      <label for="message" class="font-medium">Message:</label>
-      <textarea
-        id="message"
-        rows="5"
-        required
-        class="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-      ></textarea>
-
-      <button
-        type="submit"
-        class="bg-black text-white py-3 px-6 rounded-full hover:bg-gray-800 transition duration-300"
-      >
-        Send
-      </button>
-    </form>
-  </div>
-</section>
-
-  
-
-  <section class="cta-container">
-    <h2>Ready to drive?</h2>
-    <a href="#models" class="cta-btn">Explore Models</a>
-  </section>
-
-  <section id="news">
-    <h2>Latest News</h2>
-    <div class="news-card">
-      <h3 class="news-title">Mercedes unveils EV roadmap</h3>
-      <a href="https://newslink.com" class="news-link" target="_blank">Read more</a>
+  <!-- Mercedes Center Section -->
+  <section id="center" class="py-16 px-4 md:px-10 bg-gray-50">
+    <div class="flex flex-col md:flex-row items-center gap-10">
+      <div class="md:w-1/2 text-center md:text-left">
+        <h2 class="text-3xl font-bold mb-4">Find Your Mercedes Center</h2>
+        <p class="text-gray-600">Locate your nearest Mercedes showroom</p>
+      </div>
+      <div class="md:w-1/2">
+        <img src="images/center.jpg" alt="Mercedes Center" class="w-full rounded-xl shadow-md">
+      </div>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="footer-links">
-      <a href="#models">Models</a> |
-      <a href="#center">Centers</a> |
-      <a href="#contact">Contact</a>
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-4 md:px-10 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+    <div class="max-w-xl mx-auto bg-gray-100 p-8 rounded-xl shadow-md">
+      <form class="space-y-6">
+        <div>
+          <label for="name" class="block font-medium">Name:</label>
+          <input type="text" id="name" required class="w-full mt-1 border border-gray-300 rounded p-2">
+        </div>
+        <div>
+          <label for="email" class="block font-medium">Email:</label>
+          <input type="email" id="email" required class="w-full mt-1 border border-gray-300 rounded p-2">
+        </div>
+        <div>
+          <label for="message" class="block font-medium">Message:</label>
+          <textarea id="message" rows="5" required class="w-full mt-1 border border-gray-300 rounded p-2"></textarea>
+        </div>
+        <button type="submit" class="bg-black text-white py-2 px-4 rounded hover:bg-gray-800">Send</button>
+      </form>
     </div>
-    <p class="footer-text">© 2025 Porsche Landing Project</p>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-container py-16 px-4 md:px-10 text-center bg-gray-200">
+    <h2 class="text-3xl font-bold mb-4">Ready to drive?</h2>
+    <a href="#models" class="bg-black text-white py-3 px-6 rounded hover:bg-gray-800 inline-block">Explore Models</a>
+  </section>
+
+  <!-- News Section -->
+  <section id="news" class="py-16 px-4 md:px-10 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-6">Latest News</h2>
+    <div class="news-card bg-gray-100 max-w-xl mx-auto p-6 rounded-xl shadow">
+      <h3 class="text-xl font-semibold mb-2">Mercedes unveils EV roadmap</h3>
+      <a href="https://newslink.com" class="text-blue-600 underline" target="_blank">Read more</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-6 bg-black text-white">
+    <div class="footer-links mb-2">
+      <a href="#models" class="hover:underline">Models</a> |
+      <a href="#center" class="hover:underline">Centers</a> |
+      <a href="#contact" class="hover:underline">Contact</a>
+    </div>
+    <p class="footer-text text-sm">© 2025 Porsche Landing Project</p>
   </footer>
 
-  <div class="disclaimer">This site is a student project. Not affiliated with Mercedes Benz .</div>
+  <!-- Disclaimer -->
+  <div class="text-center py-4 text-sm bg-gray-800 text-white">This site is a student project. Not affiliated with Mercedes Benz.</div>
 
-  <section class="mobile-only-section">
+  <!-- Mobile-only section -->
+  <section class="mobile-only-section py-10 px-4 bg-yellow-100 block md:hidden text-center">
     <div class="mobile-container">
-      <h2>Exclusive Mobile Offer</h2>
+      <h2 class="text-2xl font-bold mb-2">Exclusive Mobile Offer</h2>
       <p>Get a free test drive booking!</p>
     </div>
   </section>
 
-  <div class="mascot-popup">
-    <img src="images/mascot.png" alt="Mascot">
+  <!-- Mascot Popup -->
+  <div class="mascot-popup fixed bottom-4 right-4 bg-white p-4 rounded-xl shadow-lg flex items-center gap-3">
+    <img src="images/mascot.png" alt="Mascot" class="w-12 h-12">
     <p>Hi there! Need help?</p>
   </div>
-  
-  
-  
+
 </body>
 </html>

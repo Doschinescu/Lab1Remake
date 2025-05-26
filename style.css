@@ -221,11 +221,6 @@ body {
     animation: bounce 2s infinite;
   }
   
-  @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-  }
-  
   .mascot-widget {
     position: fixed;
     right: 20px;
@@ -243,5 +238,35 @@ body {
     width: 100px;
     height: auto;
     margin-bottom: 10px;
+  }
+  
+  .mascot-popup {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    width: 180px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 15px;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideFadeIn 1s ease-out forwards;
+    animation-delay: 1s; /* delay before showing */
+  }
+  
+  .mascot-popup img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes slideFadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   

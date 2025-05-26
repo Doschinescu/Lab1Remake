@@ -211,3 +211,18 @@ body {
     }
   }
   
+  .mascot-container {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .mascot {
+    font-size: 40px;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  

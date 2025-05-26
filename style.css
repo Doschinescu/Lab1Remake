@@ -180,3 +180,18 @@ body {
     margin: 0 10px;
     text-decoration: none;
   }
+
+  .disclaimer {
+    background-color: #ffcc00;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    animation: fadeOut 5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+  }
+  

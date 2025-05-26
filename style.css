@@ -195,3 +195,19 @@ body {
     100% { opacity: 0; display: none; }
   }
   
+  @media (max-width: 768px) {
+    .mobile-only-section {
+      display: block;
+      padding: 40px;
+      background-color: #222;
+      color: white;
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .mobile-only-section {
+      display: none;
+    }
+  }
+  
